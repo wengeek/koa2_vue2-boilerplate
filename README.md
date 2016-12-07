@@ -8,13 +8,13 @@
 
 ### 安装 (2种方式)
 
-1. 已安装yarn，执行
+1、已安装yarn，执行
 
 ```shell
 yarn
 ```
 
-2. 采用npm
+2、采用npm
 
 ```shell
 npm install
@@ -25,6 +25,8 @@ npm install
 ```shell
 npm run dev
 ```
+
+默认访问 http://localhost:8008
 
 ### 编译到生产环境
 
