@@ -1,0 +1,14 @@
+{
+  "verbose": true,
+  "exec": "npm run server",
+  "watch": [
+    "server/",
+    "build/"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 8008
+  },
+  "ext": "js json"
+}
+
