@@ -3,6 +3,8 @@ const merge = require('webpack-merge')
 const path = require('path')
 const base = require('./webpack.base.conf')
 
+base.entry.app = ['webpack-hot-middleware/client', base.entry.app]
+
 module.exports = merge(base, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

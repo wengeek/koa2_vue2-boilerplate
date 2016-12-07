@@ -5,7 +5,7 @@ module.exports = {
   context: __dirname,
   devtool: '#source-map',
   entry: {
-    app: ['webpack-hot-middleware/client', '../client/app'],
+    app: '../client/app',
     vendor: ['vue', 'vue-router', 'vuex']
   },
   output: {

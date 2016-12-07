@@ -16,7 +16,8 @@
     "server": "npm run lint && babel-node server/bin",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js --progress --hide-modules",
     "build:server": "babel server --out-dir app",
-    "build": "npm run lint && npm run build:server && npm run build:client"
+    "build": "npm run lint && npm run build:server && npm run build:client",
+    "prod": "cross-env NODE_ENV=production node app/bin"
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
@@ -38,6 +39,7 @@
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.8",
     "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-env": "^0.0.9",
     "cross-env": "^3.1.3",
     "css-loader": "^0.26.1",
