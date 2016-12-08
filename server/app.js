@@ -2,6 +2,7 @@ import Koa from 'koa'
 import path from 'path'
 import bodyparser from 'koa-bodyparser'
 import koaStatic from 'koa-static'
+import favicon from 'koa-favicon'
 import convert from 'koa-convert'
 import log4js from 'koa-log4'
 import log4jsConf from './config/log4'
@@ -16,6 +17,7 @@ log4js.configure(log4jsConf, {
 })
 
 app.use(log4js.koaLogger(log4js.getLogger('http'), {level: 'auto'}))
+app.use(favicon(path.join(__dirname, '..', '/favicon.ico')))
 
 if (process.env.NODE_ENV === 'development') {
   const webpack = require('webpack')
