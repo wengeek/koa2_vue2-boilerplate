@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "nodemon",
     "lint": "eslint server/*",
-    "server": "npm run lint && babel-node server/bin",
+    "start": "npm run lint && babel-node server/bin",
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js --progress --hide-modules",
     "build:server": "babel server --out-dir app",
     "build": "npm run lint && npm run build:server && npm run build:client",

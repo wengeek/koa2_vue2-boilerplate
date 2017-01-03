@@ -1,6 +1,6 @@
 {
   "verbose": true,
-  "exec": "npm run server",
+  "exec": "npm run start",
   "watch": [
     "server/",
     "build/"
